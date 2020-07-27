@@ -7,7 +7,7 @@
 
 ## 简单介绍
 文章首先分析卫星用户通信的场景，由于地面用户和卫星用户频谱资源存在共享的问题，因此会存在干扰，不同的地面用户密度的干扰情况是不同的，给出了通信场景如下，其中卫星用户是primary，地面用户是secondary：
-![younghz的Markdown库](https://img-blog.csdnimg.cn/20200726233054858.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbkxMWA==,size_16,color_FFFFFF,t_70)
+![架构图](https://img-blog.csdnimg.cn/20200726233054858.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbkxMWA==,size_16,color_FFFFFF,t_70)
 
 文章将内容分配抽象成两个最优化问题，一个解决MPC和GPC比例，一个解决GPC的不同部分在不同若干颗卫星上如何缓存。前者主要优化的指标是max cache service probability，后者主要针对开销min cost (relay transmission +storage)。
 
